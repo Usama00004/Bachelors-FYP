@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="home.controllers.SimulationController"
+            prefHeight="618.0" prefWidth="943.0">
+
+    <children>
+        <Pane prefHeight="182.0" prefWidth="225.0" style="-fx-background-color: #2D75E8;" >
+        <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="CLOUD" layoutX="30" layoutY="150" size="150"/>
+        </children>
+        </Pane>
+
+        <Pane layoutY="182.0" prefHeight="452.0" prefWidth="225.0" style="-fx-background-color: #2D75E8;" />
+            <Button fx:id="btnSimulate" stylesheets="@../css/application.css" onAction="#handleButtonClicks" layoutX="426.0" layoutY="454.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="193.0" style="-fx-background-color: #2D75e8;" text="Simulate" textFill="#f8f3f3">
+                <font>
+                    <Font size="25.0" />
+                </font>
+            </Button>
+            <Label layoutX="246.0" layoutY="36.0" prefHeight="100.0" prefWidth="456.0" text="Simulation" textFill="#2d75e8">
+                <font>
+                    <Font name="System Bold" size="39.0" />
+                </font>
+            </Label>
+            <Label layoutX="256.0" layoutY="291.0" prefHeight="30.0" prefWidth="254.0" textFill="#9d9292">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+            <Label layoutX="246.0" layoutY="213.0" textFill="#9d9292">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+            <TextArea layoutX="268.0" layoutY="149.0" opacity="0.57" prefHeight="157.0" prefWidth="494.0" style="-fx-background-color: WHITE;" text="When you start simulation elastic search will run run in back ground and&#10; your data from csv file will fetched through elastic search this will take&#10; some time  depending upon the size of your data files. Once the data is &#10;loaded will be started .Your results will stored in files. you can visualize &#10;your results in visualization tab and you can apply differnt aggregate &#10;operations on your results   &#10; ">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </TextArea>
+            <CheckBox fx:id="checkBoxElasticSearch"  layoutX="268.0" layoutY="321.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="467.0" text="Start elastic search in background to fetch data easily" textFill="#9d9292">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </CheckBox>
+            <CheckBox fx:id="checkBoxKibana"  layoutX="268.0" layoutY="369.0" mnemonicParsing="false" text="Start Kibana in background to visualize data " textFill="#9d9292">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </CheckBox>
+            <CheckBox fx:id="hasraCheckBox"  layoutX="268.0" layoutY="417.0" mnemonicParsing="false" text="Apply HASRA algorithm on machines before simulation " textFill="#9d9292">
+              <font>
+                <Font size="18.0" />
+              </font>
+            </CheckBox>
+
+        <ProgressBar fx:id="progressBar" layoutX="430.0" layoutY="580.0" prefWidth="200.0" progress="0.0" visible="true" />
+        </children>
+    </AnchorPane>
+
+
+
+
+
+
+
+
+
+

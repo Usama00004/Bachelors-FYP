@@ -1,0 +1,199 @@
+#cloudImage{
+    -fx-text-fill:black;
+}
+#btnDataCenterSettings:hover{
+    -fx-font-size: 19;
+}
+
+#btnLoadBalancerSettings:hover{
+    -fx-font-size: 19;
+}
+
+#btnNext_LoadBalancerSettings:hover{
+    -fx-font-size: 25;
+    -fx-pref-width:140 ;
+    -fx-pref-height:50 ;
+}
+
+#btnNext:hover{
+
+    -fx-font-size: 25;
+    -fx-pref-width:140 ;
+    -fx-pref-height:50 ;
+
+}
+#btnNext_Home:hover{
+    -fx-font-size: 25;
+    -fx-pref-width:140 ;
+    -fx-pref-height:50 ;
+
+}
+
+#taskMappingpolicy{
+    -fx-pref-width: 220;
+
+}
+
+#containerMappingpolicy{
+    -fx-pref-width: 220;
+}
+
+
+#btnChooseFile:hover{
+    -fx-font-size : 14;
+}
+
+#btnNext_BatchTask:hover{
+    -fx-font-size: 22;
+}
+
+#btnMachineMeta:hover{
+    -fx-font-size: 22;
+}
+
+#btnContainerMeta:hover{
+    -fx-font-size: 22;
+}
+
+#btnBatchTask:hover{
+    -fx-font-size: 22;
+}
+
+#btnMachineUsage:hover{
+    -fx-font-size: 22;
+}
+
+#btnContainerUsage:hover{
+    -fx-font-size: 22;
+}
+
+#btnThermalUsage:hover{
+    -fx-font-size: 22;
+}
+
+#btnNext_MachineMeta:hover{
+    -fx-font-size: 24;
+}
+
+
+#btnNext_BatchTask:hover{
+    -fx-font-size :24;
+}
+
+#btnNext_ContainerMeta:hover{
+    -fx-font-size :24;
+}
+#btnNext_MachineUsage:hover{
+    -fx-font-size :24;
+}
+#btnNext_ContainerUsage:hover{
+    -fx-font-size :24;
+}
+#btnNext_ThermalUsage:hover{
+    -fx-font-size :24;
+}
+#btnNext_Home:hover{
+    -fx-font-size :24;
+}
+#btnThermalSettings:hover{
+    -fx-font-size :19;
+
+}
+
+#btnNext_MachineMetaPreProcessor:hover{
+    -fx-font-size :24;
+}
+#btnNext_ContainerMetaPreProcessing:hover{
+    -fx-font-size :24;
+}
+
+#btnNext_BatchTaskPreProcessing:hover{
+    -fx-font-size :24;
+}
+
+#btn_done_machineusage:hover{
+    -fx-font-size:14;
+}
+
+#btn_done_containerusage:hover{
+    -fx-font-size:15;
+}
+
+#btn_done_thermalusage:hover{
+    -fx-font-size:14;
+}
+
+#btn_done_kibana_index:hover{
+    -fx-font-size:15;
+}
+
+#btnThermalProfileA:hover{
+    -fx-font-size:22;
+}
+
+#btnNext_ThermalProfileA:hover{
+
+    -fx-font-size:24;
+}
+#btnNext_TypeB:hover{
+    -fx-font-size:24;
+}
+#btnThermalProfileB:hover{
+    -fx-font-size:22;
+}
+
+#btnVisualize:hover{
+    -fx-font-size:27;
+}
+#btnNext_Home:hover{
+    -fx-font-size:27;
+
+}
+#btnSimulate:hover{
+    -fx-font-size:29;
+}
+
+
+
+.button
+{
+    -fx-background-color : #F3F3F3;
+
+}
+.button:hover
+{
+    -fx-background-color : #A1C1F4 ;
+
+
+}
+
+.button:pressed
+{
+    -fx-background-color : #73A3EF ;
+    /*-fx-border-color: BLUE;*/
+}
+
+
+#choiceBoxMachineType{
+    -fx-border-color: #c5caca;
+    -fx-border-radius: 3px;
+    -fx-background-color:WHITE;
+
+}
+
+#choiceBoxStatus{
+    -fx-border-color:#c5caca;
+    -fx-border-radius: 3px;
+    -fx-background-color:WHITE;
+
+}
+#btnStart:hover{
+
+    -fx-font-size :17;
+}
+
+
+
+#text_0{
+    -fx-t-size: 30;
+}

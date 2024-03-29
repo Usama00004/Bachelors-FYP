@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="home.controllers.LoadBalancerSettingController"
+            prefHeight="618.0" prefWidth="943.0">
+
+
+
+    <children>
+        <Pane prefHeight="182.0" prefWidth="235.0" style="-fx-background-color: #2D75E8" >
+            <children >
+
+<!--                <ImageView fx:id="imageView" fitHeight="50"  fitWidth="50" layoutX="30.0" layoutY="50.0"  >-->
+<!--                    <image>-->
+<!--                        <Image url= "@../icons/SAVE_20200318_184834.jpg" />-->
+<!--                    </image>-->
+
+<!--                </ImageView>-->
+
+                <FontAwesomeIconView fx:id="cloudImage" fill="WHITE" glyphName="CLOUD"  layoutX="30" layoutY="150" size="150"/>
+            </children>
+        </Pane>
+        <Pane layoutY="182.0" prefHeight="452.0" prefWidth="235.0" style="-fx-background-color: #2D75E8;">
+            <children>
+                <Button fx:id="btnDataCenterSettings" stylesheets="@../css/application.css"  layoutX="5" layoutY="81.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: #2D75E8" text="Datacenter Settings" textFill="WHITE">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button  fx:id="btnLoadBalancerSettings"  stylesheets="@../css/application.css"  layoutX="5" layoutY="126.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: WHITE" text="Load Balancer Settings" textFill="#2D75E8">
+                    <font>
+                        <Font size="17.0" />
+                    </font>
+                </Button>
+                <Button  fx:id="btnThermalSettings" stylesheets="@../css/application.css"  layoutX="5" layoutY="171.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="225.0" style="-fx-background-color: #2D75E8" text="Thermal Profiles" textFill="WHITE">
+                    <font>
+                        <Font size="18.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+        <Button fx:id="btnNext_ThermalProfile" stylesheets="@../css/application.css" onAction="#handleButtonClicks" layoutX="616.0" layoutY="504.0" mnemonicParsing="false" prefHeight="45.0"  prefWidth="135.0" style="-fx-background-color: #2D75e8;" text="Next" textFill="#f8f3f3">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Button>
+        <Label layoutX="246.0" layoutY="36.0" prefHeight="100.0" prefWidth="456.0" text="Load Balancer Settings" textFill="#2d75e8">
+            <font>
+                <Font name="System Bold" size="39.0" />
+            </font>
+        </Label>
+        <Label layoutX="256.0" layoutY="291.0" prefHeight="30.0" prefWidth="244.0" text="Balancing policy for tasks" textFill="#9d9292">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="256.0" layoutY="241.0" prefHeight="30.0" prefWidth="294.0" text="Balancing policy for containers " textFill="#9d9292">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="246.0" layoutY="213.0" textFill="#9d9292">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+        <ChoiceBox fx:id="taskMappingpolicy"  stylesheets="@../css/application.css" layoutX="583.0" layoutY="244.0" prefHeight="25.0" prefWidth="100.0"  style="-fx-background-color: WHITE" />
+        <ChoiceBox fx:id="containerMappingpolicy"  stylesheets="@../css/application.css" layoutX="583.0" layoutY="294.0" prefWidth="100.0" style="-fx-background-color: WHITE" />
+    </children>
+
+
+</AnchorPane>

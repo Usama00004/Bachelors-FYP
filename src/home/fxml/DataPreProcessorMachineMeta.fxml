@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="home.controllers.DataPerProcessorMachineMetaController"
+            prefHeight="618.0" prefWidth="943.0">
+
+
+        <children>
+
+            <Pane prefHeight="182.0" prefWidth="235.0" style="-fx-background-color: #2D75E8;" >
+                <children>
+                    <FontAwesomeIconView fill="WHITE" glyphName="CLOUD" layoutX="30" layoutY="150" size="150"/>
+                </children>
+            </Pane>
+            <Pane layoutY="182.0" prefHeight="452.0" prefWidth="235.0" style="-fx-background-color: #2D75E8">
+                <children>
+                    <Button  stylesheets="@../css/application.css" fx:id="btnMachineMeta"  layoutX="5.0" layoutY="81.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="215.0" style="-fx-background-color: WHITE;" text="Machine Meta " textFill="#2D75E8">
+                        <font>
+                            <Font size="20.0" />
+                        </font></Button>
+                    <Button stylesheets="@../css/application.css" fx:id="btnContainerMeta"  layoutX="5.0" layoutY="126.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="215.0" style="-fx-background-color: #2D75E8;" text="Container Meta" textFill="WHITE">
+                        <font>
+                            <Font size="20.0" />
+                        </font></Button>
+                    <Button stylesheets="@../css/application.css" fx:id="btnBatchTask"  layoutX="5.0" layoutY="171.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="215.0" style="-fx-background-color:#2D75E8 ;" text="Batch Task" textFill="WHITE">
+                        <font>
+                            <Font size="20.0" />
+                        </font></Button>
+                </children>
+            </Pane>
+            <Button  fx:id="btnNext_ContainerMetaPreProcessing" stylesheets="@../css/application.css" onAction="#handleButtonClicks" layoutX="616.0" layoutY="504.0" mnemonicParsing="false" prefHeight="45.0"  prefWidth="135.0" style="-fx-background-color: #2D75e8;" text="Next" textFill="#f8f3f3">
+                <font>
+                    <Font size="22.0" />
+                </font>
+            </Button>
+            <Label layoutX="246.0" layoutY="36.0" prefHeight="100.0" prefWidth="591.0" text="Setting Default Values" textFill="#2d75e8">
+                <font>
+                    <Font name="System Bold" size="39.0" />
+                </font>
+            </Label>
+            <Label layoutX="280.0" layoutY="200.0" prefHeight="30.0" prefWidth="254.0" text="Machine Type" textFill="#9d9292">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+            <Label layoutX="280.0" layoutY="240.0" prefHeight="30.0" prefWidth="254.0" text="Total Cpu Cores" textFill="#9d9292">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+            <Label layoutX="280.0" layoutY="280.0" prefHeight="30.0" prefWidth="254.0" text="Total Memory Size " textFill="#9d9292">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+            <Label layoutX="280.0" layoutY="320.0" prefHeight="30.0" prefWidth="254.0" text="Inlet Temperatue" textFill="#9d9292">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+            <Label layoutX="280.0" layoutY="360.0" prefHeight="30.0" prefWidth="254.0" text="Machine Status " textFill="#9d9292">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+
+            <ChoiceBox fx:id="choiceBoxMachineType" stylesheets="@../css/application.css" layoutX="500.0" layoutY="200.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="textDefaultCpu" layoutX="500.0" layoutY="240.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="textDefautMem" layoutX="500.0" layoutY="280.0" prefHeight="25.0" prefWidth="100.0" />
+            <TextField fx:id="textDefautInletTemp" layoutX="500.0" layoutY="320.0" prefHeight="25.0" prefWidth="100.0" />
+            <ChoiceBox fx:id="choiceBoxStatus"  stylesheets="@../css/application.css" layoutX="500.0" layoutY="360" prefHeight="25.0" prefWidth="100.0"  />
+
+
+        </children>
+
+
+    </AnchorPane>
+

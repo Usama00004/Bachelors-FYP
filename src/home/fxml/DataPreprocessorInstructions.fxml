@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="home.controllers.DataPreProcessingInstructionController"
+            prefHeight="618.0" prefWidth="943.0">
+
+
+<children>
+
+    <Pane prefHeight="182.0" prefWidth="235.0" style="-fx-background-color: #2D75E8;" >
+        <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="CLOUD" layoutX="30" layoutY="150" size="150"/>
+        </children>
+    </Pane>
+
+    <Pane layoutY="182.0" prefHeight="452.0" prefWidth="235.0" style="-fx-background-color: #2D75E8">
+        <children>
+
+        </children>
+    </Pane>
+    <Button  fx:id="btnNext_MachineMetaPreProcessor" stylesheets="@../css/application.css" onAction="#handleButtonClicks" layoutX="616.0" layoutY="504.0" mnemonicParsing="false" prefHeight="45.0"  prefWidth="135.0" style="-fx-background-color: #2D75e8;" text="Next" textFill="#f8f3f3">
+        <font>
+            <Font size="22.0" />
+        </font>
+
+    </Button>
+
+
+
+        <Label layoutX="246.0" layoutY="36.0" prefHeight="100.0" prefWidth="591.0" text="Data Preprocessing" textFill="#2d75e8">
+            <font>
+                <Font name="System Bold" size="39.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="299.0" layoutY="160.0" prefHeight="45.0" prefWidth="149.0" text="Instructions" textFill="#bcb2b2">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Label>
+        <Separator layoutX="299.0" layoutY="198.0" opacity="0.71" prefHeight="14.0" prefWidth="149.0" />
+
+
+        <Label layoutX="299.0" layoutY="221.0" prefHeight="17.0" prefWidth="466.0" text="- In this section you will set default values for your dataset." textFill="#9d9292" />
+        <Label layoutX="299.0" layoutY="251.0" prefHeight="17.0" prefWidth="486.0" text="- If any field is found to be incomplete in your data set that will be replaced by these values." textFill="#9d9292" />
+        <Label layoutX="299.0" layoutY="281.0" prefHeight="17.0" prefWidth="466.0" text="- Durring Simulation any problametic value will be replaced by these values " textFill="#9d9292" />
+        <Label layoutX="299.0" layoutY="277.0" prefHeight="17.0" prefWidth="426.0" text="" textFill="#9d9292" />
+        <Label layoutX="299.0" layoutY="304.0" prefHeight="17.0" prefWidth="440.0" text="" textFill="#9d9292" />
+        <Label layoutX="299.0" layoutY="329.0" prefHeight="17.0" prefWidth="426.0" text="" textFill="#9d9292" />
+        <Label layoutX="299.0" layoutY="381.0" prefHeight="17.0" prefWidth="482.0" text="" textFill="#9d9292" />
+        <Label layoutX="299.0" layoutY="406.0" prefHeight="17.0" prefWidth="518.0" text="" textFill="#9d9292" />
+        <Label layoutX="299.0" layoutY="355.0" prefHeight="17.0" prefWidth="454.0" text="" textFill="#9d9292" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</children>
+
+</AnchorPane>

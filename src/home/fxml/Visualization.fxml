@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.text.Font?>
+
+
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="home.controllers.VisualizationController"
+            prefHeight="618.0" prefWidth="943.0">
+
+
+        <children>
+            <Pane prefHeight="182.0" prefWidth="225.0" style="-fx-background-color: #2D75E8;" >
+                <children>
+                    <FontAwesomeIconView fill="WHITE" glyphName="CLOUD" layoutX="30" layoutY="150" size="150"/>
+                </children>
+            </Pane>
+
+            <Pane layoutY="182.0" prefHeight="452.0" prefWidth="225.0" style="-fx-background-color: #2D75E8;" />
+            <Button fx:id="btnVisualize" stylesheets="@../css/application.css" onAction="#handleButtonClicks" layoutX="426.0" layoutY="454.0" mnemonicParsing="false" prefHeight="70.0" prefWidth="193.0" style="-fx-background-color: #2D75e8;" text="Visualize" textFill="#f8f3f3">
+                <font>
+                    <Font size="30.0" />
+                </font>
+            </Button>
+            <Label layoutX="246.0" layoutY="36.0" prefHeight="100.0" prefWidth="456.0" text="Visualization" textFill="#2d75e8">
+                <font>
+                    <Font name="System Bold" size="39.0" />
+                </font>
+            </Label>
+            <Label layoutX="256.0" layoutY="291.0" prefHeight="30.0" prefWidth="254.0" textFill="#9d9292">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+            <Label layoutX="246.0" layoutY="213.0" textFill="#9d9292">
+                <font>
+                    <Font size="20.0" />
+                </font>
+            </Label>
+            <TextArea layoutX="268.0" layoutY="149.0" opacity="0.57" prefHeight="157.0" prefWidth="494.0" style="-fx-background-color: WHITE;" text="When you click on visualization button kibana will start on  your device &#10;at port no 5601. If port no 5601 is found to be busy in sysstem&#10;Kibana will start on any next avilable port.In Kibana you can Visualize your &#10;  reults in many forms. You can easily apply aggregate functions.  ">
+                <font>
+                    <Font size="14.0" />
+                </font>
+            </TextArea>
+            <CheckBox fx:id="checkBoxExel"  layoutX="268.0" layoutY="321.0" mnemonicParsing="false" text="Visualize your Results in MicroSoft Exel" textFill="#9d9292">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </CheckBox>
+            <CheckBox fx:id="checkBoxKibana"  layoutX="268.0" layoutY="369.0" mnemonicParsing="false" text="Visualize your Results in kibana" textFill="#9d9292">
+                <font>
+                    <Font size="18.0" />
+                </font>
+            </CheckBox>
+        </children>
+    </AnchorPane>
+
+

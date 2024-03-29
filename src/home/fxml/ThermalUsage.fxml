@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="home.controllers.ThermalUsageController"
+            prefHeight="618.0" prefWidth="943.0">
+
+    <Pane prefHeight="182.0" prefWidth="225.0" style="-fx-background-color: #2D75E8;" >
+        <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="CLOUD" layoutX="30" layoutY="150" size="150"/>
+        </children>
+    </Pane>
+
+
+    <Pane layoutY="172.0" prefHeight="452.0" prefWidth="225.0" style="-fx-background-color: #2D75E8;">
+        <children>
+            <Button stylesheets="@../css/application.css" fx:id="btnMachineMeta"  layoutX="5.0" layoutY="81.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="215.0" style="-fx-background-color: #2D75E8;" text="Machine Meta " textFill="WHITE">
+                <font>
+                    <Font size="20.0" />
+                </font></Button>
+            <Button stylesheets="@../css/application.css" fx:id="btnContainerMeta"  layoutX="5.0" layoutY="126.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="215.0" style="-fx-background-color: #2D75E8;" text="Container Meta" textFill="WHITE">
+                <font>
+                    <Font size="20.0" />
+                </font></Button>
+            <Button stylesheets="@../css/application.css" fx:id="btnBatchTask"  layoutX="5.0" layoutY="171.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="215.0" style="-fx-background-color: #2D75E8;" text="Batch Task" textFill="WHITE">
+                <font>
+                    <Font size="20.0" />
+                </font></Button>
+            <Label layoutX="2.0" layoutY="38.0" prefHeight="38.0" prefWidth="167.0" text="Input Files" textFill="WHITE">
+                <font>
+                    <Font name="Arial" size="25.0" />
+                </font>
+            </Label>
+            <Label layoutX="2.0" layoutY="242.0" prefHeight="45.0" prefWidth="180.0" text="Output Files" textFill="WHITE">
+                <font>
+                    <Font name="Arial" size="25.0" />
+                </font>
+            </Label>
+            <Button stylesheets="@../css/application.css" fx:id="btnMachineUsage"  layoutX="5.0" layoutY="292.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="214.0" style="-fx-background-color: #2D75E8;" text="Machine Usage" textFill="WHITE">
+                <font>
+                    <Font size="20.0" />
+                </font></Button>
+            <Button stylesheets="@../css/application.css" fx:id="btnContainerUsage"  layoutX="5.0" layoutY="337.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="214.0" style="-fx-background-color: #2D75E8;" text="Container Usage" textFill="WHITE">
+                <font>
+                    <Font size="20.0" />
+                </font></Button>
+            <Button stylesheets="@../css/application.css" fx:id="btnThermalUsage"  layoutX="5.0" layoutY="382.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="214.0" style="-fx-background-color: WHITE;" text="Thermal Data" textFill="#2D75E8">
+                <font>
+                    <Font size="20.0" />
+                </font></Button>
+        </children>
+    </Pane>
+
+    <Label layoutX="246.0" layoutY="36.0" prefHeight="100.0" prefWidth="391.0" text="Thermal Usage" textFill="#2D75E8">
+        <font>
+            <Font name="System Bold" size="39.0" />
+        </font>
+    </Label>
+
+
+
+    <Label layoutX="246.0" layoutY="182.0" prefHeight="30.0" prefWidth="517.0" text="Machine usage file will be after simulation" textFill="#9d9292">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <Label layoutX="246.0" layoutY="213.0" text="(MachineI Id, Time stamp)" textFill="#9d9292">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+
+
+    <Label layoutX="246.0" layoutY="290.0" prefHeight="23.0" prefWidth="439.0" text="Please type name of machine usage file" textFill="#9d9292">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <Button stylesheets="@../css/application.css" fx:id="btn_done_thermalusage" onAction="#handleButtonClicks" layoutX="443.0" layoutY="320.0" mnemonicParsing="false" style="-fx-background-color: #2d75e8;" text="Done" textFill="WHITE" />
+    <TextField fx:id="txt_thermalusage" layoutX="246.0" layoutY="320.0" prefHeight="25.0" prefWidth="180.0" />
+    <Label layoutX="246.0" layoutY="364.0" prefHeight="30.0" prefWidth="509.0" text="Please type a name of index in this index to visualize your results in kibana" textFill="#9d9292">
+        <font>
+            <Font size="15.0" />
+        </font>
+    </Label>
+    <Button stylesheets="@../css/application.css" fx:id="btn_done_kibana_index" onAction="#handleButtonClicks" layoutX="446.0" layoutY="402.0" mnemonicParsing="false" style="-fx-background-color: #2d75e8;" text="Done" textFill="WHITE" />
+    <TextField fx:id="txt_indexkibana" layoutX="246.0" layoutY="402.0" prefHeight="25.0" prefWidth="180.0" />
+
+    <Button stylesheets="@../css/application.css" fx:id="btnNext_Home" onAction="#handleButtonClicks" layoutX="502.0" layoutY="499.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="135.0" style="-fx-background-color: #2D75E8;" text="Next" textFill="#f8f3f3">
+        <font>
+            <Font size="22.0" />
+        </font>
+    </Button>
+
+
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="home.controllers.ErrorForFieldsController"
+            prefHeight="100.0" prefWidth="450.0">
+
+
+
+
+    <children>
+
+        <Label layoutX="120.0" layoutY="25.0" prefHeight="30.0" prefWidth="254.0" text="Error in Selected File!" textFill="#2D75E8">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="30.0" layoutY="50.0" prefHeight="30.0" prefWidth="400.0" text="Please make sure all fields same order which is descibed in instructions " textFill="#2D75E8">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+
+
+    </children>
+
+
+
+</AnchorPane>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
